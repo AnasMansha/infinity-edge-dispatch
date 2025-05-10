@@ -1,0 +1,6 @@
+{
+  "email": "EMAIL_TO_DISPLAY",
+  "phone": "PHONE_TO_DISPLAY",
+  "address": "ADDRESS_TO_DISPLAY",
+  "receiverEmail": "RESEND_EMAIL"
+}

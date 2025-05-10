@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import { useStoreInfo } from "../context/SourceInfoContext";
 
 const TermsPrivacy = () => {
+    const { info } = useStoreInfo();
+  
   return (
     <div className="font-inter sm:min-h-screen bg-zinc-100 px-[16px] sm:px-[40px] lg:px-[80px] sm:py-[80px]">
       <main className="flex-grow w-full max-w-[840px] mx-auto rounded-[16px] gap-[20px] sm:gap-[40px]">
@@ -14,7 +14,7 @@ const TermsPrivacy = () => {
               </h2>
               <p className="mt-4 text-sm sm:text-[20px] text-gray-700 sm:leading-snug">
                 Welcome to <strong>InfinityEdge.us</strong>. By accessing or using our website and
-                services, you agree to these Terms and Conditions ("Terms"). Please read them
+                services, you agree to these Terms and Conditions (&quot;Terms&quot;). Please read them
                 carefully, as they govern your use of our platform and services.
               </p>
             </section>
@@ -94,12 +94,7 @@ const TermsPrivacy = () => {
             </h3>
             <p className="mt-2 text-sm sm:text-[20px] text-gray-700 sm:leading-snug">
               For questions or concerns about these Terms, please contact us at
-              <a
-                href="mailto:infinityedgedispatch@gmail.com"
-                className="text-blue-600 underline ml-1"
-              >
-                infinityedgedispatch@gmail.com
-              </a>
+             <a href={`mailto:${info?.email}`} className="text-blue-600 underline ml-1">{info?.email || "loading..."}</a>{" "}
               .
             </p>
 
