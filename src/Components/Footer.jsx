@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="max-w-[1240px] mx-auto px-4">
         <NavLink to="/">
           <img
-            src="images/Dev_loo.png"
+            src="images/logo.svg"
             alt="Truck Dispatch Logo"
-            className="h-8 w-auto sm:h-10 lg:h-12 mb-4 mx-auto sm:mx-0"
+            className="h-10 w-auto sm:h-12 lg:h-16 mx-auto sm:mx-0"
           />
         </NavLink>
 
